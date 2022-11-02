@@ -33,12 +33,20 @@ const Main = () => {
     console.log(result);
   };
 
-  const filterProduct = () => {
-    const res = allProducts.sort((a, b) => {
-      return (a.price - b.price) === filterData;
-    });
+  const filterProduct = (sortedData) => {
+    console.log(sortedData);
+  
+  if(filterData==="Price-High To Low"){
+    setProductsData(productsData.sort((a,b)=>b.price-a.price
 
-    setFilterData(res);
+  ))}
+
+  else{
+    setProductsData(productsData.sort((a,b)=>a.price-b.price
+
+  ))};
+
+  setFilterData(sortedData);
   };
 
   useEffect(() => {
