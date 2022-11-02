@@ -29,12 +29,12 @@ export default function SearchForm({
       <h1>Products</h1>
       <div className="btnn">
         <button className="btn2" onClick={()=>{
-          setFilterData(productsData)
+          setFilterData("Price-High To Low")
 
         }}>Price - High To Low</button>
 
         <button className="btn3" onClick={()=>{
-          setFilterData(allProducts)
+          setFilterData("Price-Low To High")
 
         }}>Price - Low To High</button>
       </div>
